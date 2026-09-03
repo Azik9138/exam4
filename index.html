@@ -6,11 +6,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./src/output.css">
-</head>
-<body>
-  
-</body>
+  <style>
+    .market-tab-btn.active-tab {
+      background-color: #0ea5e9;
+      color: white;
+    }
 
+    .market-tab-btn {
+      color: #475569;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header class="absolute top-0 left-0 w-full z-20">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex items-center justify-between">
+      <a href="#" class="text-white font-bold text-xl tracking-wide">
+        INNOMA<span class="text-teal-400">.VC</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-white text-sm">
+        <a href="#about" class="hover:text-teal-300 transition-colors">Кто мы?</a>
+        <a href="#services" class="hover:text-teal-300 transition-colors">Услуги</a>
+        <a href="#accelerator" class="hover:text-teal-300 transition-colors">Акселератор</a>
+        <a href="#events" class="hover:text-teal-300 transition-colors">Новости</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="#"
+          class="hidden sm:inline-block bg-teal-500 hover:bg-teal-600 transition-colors text-white text-sm font-medium px-5 py-2 rounded-md">
+          Войти
+        </a>
+
+        <button id="burgerBtn" class="md:hidden text-white p-2" aria-label="Меню">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <nav id="mobileMenu" class="hidden md:hidden bg-[#0b2e40]/95 px-5 py-4 flex flex-col gap-4 text-white text-sm">
+      <a href="#about">Кто мы?</a>
+      <a href="#services">Услуги</a>
+      <a href="#accelerator">Акселератор</a>
+      <a href="#events">Новости</a>
+      <a href="#" class="bg-teal-500 text-center px-5 py-2 rounded-md">Войти</a>
+    </nav>
+  </header>
+</body>
 
 
  
